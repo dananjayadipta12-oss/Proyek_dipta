@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Tata Letak Kontainer */
+.container {
+    display: flex;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #2c3e50;
+}
+
+.profile-card h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.bio {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Konten Utama */
+.main-content {
+    flex: 3;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.date {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+h3 {
+    margin: 20px 0 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: #2c3e50;
+    color: white;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        order: 2; /* Sidebar pindah ke bawah di HP */
+    }
+}
