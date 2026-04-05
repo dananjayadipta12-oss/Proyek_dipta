@@ -114,3 +114,14 @@ footer {
         order: 2; /* Sidebar pindah ke bawah di HP */
     }
 }
+.video-container {
+  max-width: 640px; /* Batas maksimal lebar di laptop */
+  margin: 0 auto;   /* Membuat konten ke tengah */
+  padding: 10px;    /* Memberi jarak sedikit dari pinggir layar HP */
+}
+
+.video-container video {
+  width: 100%;      /* Video akan selalu mengikuti lebar container */
+  height: auto;     /* Tinggi otomatis menyesuaikan lebar */
+  display: block;
+}
