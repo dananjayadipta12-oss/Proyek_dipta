@@ -201,3 +201,33 @@ footer {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+/* Gaya dasar untuk link update */
+.update-link {
+    background-color: #ff4757; /* Warna merah terang */
+    color: white !important;   /* Memastikan teks tetap putih */
+    padding: 4px 10px;
+    border-radius: 1px;       /* Membuat bentuk kapsul */
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.update-link:hover {
+    background-color: #ff6b81; /* Warna saat di-hover */
+}
+.update-link {
+    position: relative;
+    font-weight: bold;
+}
+
+.update-link::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid white; /* Agar terlihat terpisah dari teks */
+}
